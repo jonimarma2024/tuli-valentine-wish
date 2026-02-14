@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>For TULI ❤️</title>
+    <meta name="title" content="A Special Surprise for TULI ❤️">
+    <meta name="description" content="A magical Valentine's Day surprise with a personalized poem just for you.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuli-valentine.vercel.app/"> <!-- Replace with your actual URL once hosted -->
+    <meta property="og:title" content="For TULI ❤️">
+    <meta property="og:description" content="A magical Valentine's Day surprise with a personalized poem just for you.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1000&auto=format&fit=crop"> <!-- Thematic placeholder image -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="For TULI ❤️">
+    <meta property="twitter:description" content="A magical Valentine's Day surprise with a personalized poem just for you.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1000&auto=format&fit=crop">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+        background-color: #000;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .animate-gradient {
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(25px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      }
+      .glow-border {
+        position: relative;
+      }
+      .glow-border::after {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        background: linear-gradient(45deg, #ff4e50, #ff99ac, #fc913a, #ff4e50);
+        background-size: 400% 400%;
+        z-index: -1;
+        filter: blur(10px);
+        border-radius: inherit;
+        opacity: 0.5;
+        animation: gradientBG 5s linear infinite;
+      }
+      .noise {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        opacity: 0.05;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+        "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+        "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
